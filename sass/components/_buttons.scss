@@ -1,0 +1,96 @@
+.btn {
+    &__menu {
+        padding: 12px 16px;
+        background: rgba(224, 138, 253, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        cursor: pointer;
+    }
+
+    &__nav {
+        padding: 16px 24px;
+        background: rgba(224, 138, 253, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        color: $btn-color;
+        font-family: inherit;
+        font-style: normal;
+        font-weight: $font-weight-md;
+        font-size: $btn-font-size;
+        cursor: pointer;
+    }
+
+    &__close {
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+
+    &__hero {
+        background: #8724AF;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(2px);
+        border-radius: 16px;
+        padding: 12px 24px;
+        color: #DDB3ED;
+        width: 170px;
+        font-family: inherit;
+        cursor: pointer;
+    }
+
+    &__cart {
+        background: #1D0E16;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 16px 24px;
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #DDB3ED;
+        cursor: pointer;
+    }
+
+    &__cartAdd {
+        padding: 16px 24px;
+
+        position: absolute;
+        width: 170px;
+        height: 48px;
+        left: 10px;
+        top: 100px;
+
+        color: #DDB3ED;
+        background: #8724AF;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(2px);
+        border-radius: 16px;
+    }
+
+    &__features {
+        cursor: pointer;
+        padding: 16px 24px;
+        width: 124px;
+
+        font-family: inherit;
+        color: #DDB3ED;
+        background: #8724AF;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(2px);
+        border-radius: 16px;
+    }
+
+    &__footer {
+        cursor: pointer;
+        padding: 16px 24px;
+
+        width: 126px;
+        height: 48px;
+
+        font-family: inherit;
+        color: #DDB3ED;
+        background: $footer-header;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+    }
+}

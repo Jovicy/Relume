@@ -1,0 +1,18 @@
+.input {
+    &__footer {
+        border: none;
+        font-family: inherit;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 16px;
+
+        width: 365px;
+        height: 48px;
+        padding: 20px;
+        cursor: pointer;
+
+        @include respond(phone) {
+            width: auto;
+        }
+    }
+}

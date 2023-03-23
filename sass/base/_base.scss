@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $default-font-fam-mono;
+    background-color: $default-body-color;
+    font-size: $default-font-size;
+    color: $default-color;
+
+
+}
+
+.container {
+    max-width: 1439px;
+    margin: 0 auto;
+    padding: 0 50px;
+    overflow-x: hidden;
+}
