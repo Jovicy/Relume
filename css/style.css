@@ -684,6 +684,7 @@ body {
     .contact__main__heading {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 15px;
       margin-bottom: 20px; }
       .contact__main__heading h3 {
