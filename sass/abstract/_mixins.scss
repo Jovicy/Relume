@@ -10,7 +10,7 @@
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%); 
+   transform: translate(-50%, -50%);
 }
 
 
@@ -33,11 +33,11 @@ $breakpoint arguement choices:
 1em = 16px
 */
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media (max-width: 37.5em) { @content };    //600px
-    }
-    @if $breakpoint == tab-land{
-        @media (min-width: 56.25em) { @content };   //900px
+    // @if $breakpoint == phone {
+    //     @media (max-width: 37.5em) { @content };    //600px
+    // }
+    @if $breakpoint == phone{
+        @media (max-width: 900px) { @content };   //900px
     }
     @if $breakpoint == tab-port {
         @media (max-width: 75em) { @content };  //1200px
@@ -45,4 +45,4 @@ $breakpoint arguement choices:
     @if $breakpoint == big-desktop {
         @media (max-width: 112.5em) { @content };   //1800px
     }
-} 
+}
