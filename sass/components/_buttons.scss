@@ -5,6 +5,9 @@
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 16px;
         cursor: pointer;
+        // position: absolute;
+        z-index: 3;
+        outline: none;
     }
 
     &__nav {
