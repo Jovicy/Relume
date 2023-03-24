@@ -2,6 +2,8 @@
     background-color: $default-color;
     padding: 5rem 0;
     color: $footer-color;
+    overflow-y: hidden;
+
 
     &__content {
         display: flex;

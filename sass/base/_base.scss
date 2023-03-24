@@ -22,4 +22,8 @@ body {
     margin: 0 auto;
     padding: 0 50px;
     overflow-x: hidden;
+
+    @include respond(phone) {
+        padding: 0 15px;
+    }
 }
