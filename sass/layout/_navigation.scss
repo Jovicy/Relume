@@ -13,54 +13,54 @@
         }
     }
 
-    &__container {
-        display: none;
+    &__sidebar {
+        width: 75%;
+        max-width: 300px;
+        height: 100%;
+        padding: 2rem 1rem;
+        background-color: $default-color;
+        position: fixed;
+        z-index: 3;
+        left: -300px;
+        transition: 0.2s linear;
 
-        @include respond(phone) {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: inherit;
-            z-index: 2;
-            transform: translateX(-100%);
-            transition: all 0.5s linear;
-            opacity: 0.5;
+        h3 {
+            color: $default-body-color;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5em;
+        }
+
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            h3 {
+                font-size: 20px;
+            }
         }
     }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
 
-        padding: 2rem 0;
-        list-style-type: none;
-        text-align: center;
-        position: fixed;
-        width: 70%;
-        height: 100%;
-        overflow: hidden;
-        background-color: $default-color;
-        color: $default-body-color;
+    &__menu {
+        margin: 0 -1rem;
 
-        li,
-        a {
-            margin: 1rem 0;
-            letter-spacing: 0.1rem;
-
+        &__item {
             display: block;
+            padding: 1em;
+            color: $default-body-color;
             text-decoration: none;
-            text-transform: uppercase;
-            padding: 0.4rem;
-            color: inherit;
+            transition: 0.2s linear;
+
+            &:hover {
+                color: $default-body-color;
+                border-right: 5px solid $default-body-color;
+            }
         }
     }
 }
 
-/*make nav visible by transform*/
-.nav-active {
-    transform: translateX(0%);
-    opacity: 1;
-    display: block;
+.is-active {
+    left: 0px;
 }

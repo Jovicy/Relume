@@ -29,21 +29,18 @@ function showSlides(n) {
 const toggleBtn = document.querySelector(".btn__close");
 const links = document.querySelector(".toptolbar");
 
+const menuToggle = document.querySelector(".btn__menu");
+const menuclose = document.querySelector(".btn__closed");
+const sidebar = document.querySelector(".nav__sidebar");
+
 toggleBtn.addEventListener("click", function () {
   links.classList.toggle("hide");
 });
 
+menuToggle.addEventListener("click", function () {
+  sidebar.style.left = "0px";
+});
 
-// ToggleBtn
-const toggler = document.querySelector('.btn__menu'),
-  navListContainer = document.querySelector('.nav__container');
-
-/*when toggler button is clicked*/
-toggler.addEventListener(
-  "click",
-  () => {
-    //make nav visible
-    navListContainer.classList.toggle('nav-active');
-  },
-  true
-);
+menuclose.addEventListener("click", function () {
+  sidebar.style.left = "-300px";
+});
